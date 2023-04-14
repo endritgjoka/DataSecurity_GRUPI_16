@@ -17,4 +17,13 @@ public class Base64en_de {
         return message;
     }
   
+    public static void main(String[] args) {
+        // Encode a message
+        String message = "Kjo është detyra e dytë, nga grupi 16!";
+        String encodedMessage = base64Encode(message);
+        System.out.println(encodedMessage);
+
+        // Decode a message
+        String decodedMessage = base64Decode(encodedMessage);
+        System.out.println(decodedMessage);
 }
