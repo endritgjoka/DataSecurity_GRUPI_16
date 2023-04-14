@@ -9,5 +9,12 @@ public class Base64en_de {
         String base64Message = new String(base64Bytes);
         return base64Message;
     }
+        // Base 64 Decoding
+    public static String base64Decode(String base64Message) {
+        byte[] base64Bytes = base64Message.getBytes();
+        byte[] messageBytes = Base64.getDecoder().decode(base64Bytes);
+        String message = new String(messageBytes);
+        return message;
+    }
   
 }
