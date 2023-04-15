@@ -26,4 +26,5 @@ public class Base64en_de {
         // Decode a message
         String decodedMessage = base64Decode(encodedMessage);
         System.out.println(decodedMessage);
+   }
 }
